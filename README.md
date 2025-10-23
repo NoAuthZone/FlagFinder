@@ -43,24 +43,24 @@ By default, the following file types are searched (if **-AllFiles** is not set):
 ## Options / Parameters
 
 `-Path "Path"`
-	Search path ( example: `-Path "C:\Users"` ). The command searches recursively under the specified path.
+Search path ( example: `-Path "C:\Users"` ). The command searches recursively under the specified path.
     
 `-IncludeHidden`
-	Includes hidden files and protected directories (e.g., AppData, Recycle Bin).
+Includes hidden files and protected directories (e.g., AppData, Recycle Bin).
     
 `-AllFiles`
-	Searches all file types. Default: Only the predefined file types listed above are searched.
+Searches all file types. Default: Only the predefined file types listed above are searched.
     
 `-FlagFormat "PATTERN"`
-	Defines a custom flag or CTF pattern (e.g., "HTB", "FLAG", or a full regex).
-	Overrides the default pattern. Matching is case-insensitive.
+Defines a custom flag or CTF pattern (e.g., "HTB", "FLAG", or a full regex).
+Overrides the default pattern. Matching is case-insensitive.
 
 `-DeepReg` 
-	Searches all registry paths (may take a very long time).
-	⚠️ Use with caution — this option significantly increases runtime.
+Searches all registry paths (may take a very long time).
+⚠️ Use with caution — this option significantly increases runtime.
     
 `-OutFile "<FilePath>"`
-	Writes the search results to the specified output file (example: -OutFile "C:\results.txt").
+Writes the search results to the specified output file (example: -OutFile "C:\results.txt").
 	
 ## Example Commands
 
