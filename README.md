@@ -49,7 +49,7 @@ By default, the following file types are searched (if **-AllFiles** is not set):
     Includes hidden files and protected directories (e.g., AppData, Recycle Bin).
     
 `-AllFiles`  
-    Searches **all** file types. Default: Only the predefined file types listed above are searched.
+    Searches all file types. Default: Only the predefined file types listed above are searched.
     
 `-FlagFormat "PATTERN"`
     Defines a custom flag or CTF pattern (e.g., "HTB", "FLAG", or a full regex).
