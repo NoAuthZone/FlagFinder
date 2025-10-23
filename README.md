@@ -53,7 +53,7 @@ By default, the following file types are searched (if **-AllFiles** is not set):
 
 ## Example Commands
 
-### Disable PowerShell Logging and Search on Partion E inlusive hidden Files as Appdata or Recycle Bin.
+### This command disables PowerShell logging and searches partition E, including hidden files such as Appdata or Recycle Bin, for the flag
 ```
 powershell -ep Bypass -File "C:\Users\Administrator\Documents\FlagFinderv2.ps1" ` -Path "E:\"  -IncludeHidden 
 ```
