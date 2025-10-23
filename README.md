@@ -42,33 +42,36 @@ By default, the following file types are searched (if **-AllFiles** is not set):
 
 ## Options / Parameters
 
-- `-Path "Path"`  
-	Search path ( example: `-Path "C:\Users"` ). Searches recursively under the specified path.
+-Path "Path"  
+	Search path ( example: `-Path "C:\Users"` ). The command searches recursively under the specified path.
     
-- `-IncludeHidden`  
-    Includes hidden files and protected areas (e.g., `AppData`, Recycle Bin).
+-IncludeHidden  
+    Includes hidden files and protected directories (e.g., AppData, Recycle Bin).
     
-- `-AllFiles`  
-    Searches **all** file types. Default: only the types listed above.
+-AllFiles  
+    Searches **all** file types. Default: Only the predefined file types listed above are searched.
     
-- `-FlagFormat "PATTERN"`  
-    Custom flag/CTF pattern (e.g., `"HTB"`, `"FLAG"`, or a complete regex). Overrides the default pattern. Case-insensitive.
-    
-- `-DeepReg`  
-    Searches **all** registry paths (very long runtime!). Caution: can be very time-consuming.
-    
-- `-OutFile '<Dateipfad>'`  
-    Write the results to the specified output file (e.g., `-OutFile "C:\file.txt"`).
+-FlagFormat "PATTERN"  
+    Defines a custom flag or CTF pattern (e.g., "HTB", "FLAG", or a full regex).
+    Overrides the default pattern. Matching is case-insensitive.
 
+-DeepReg 
+    Searches all registry paths (may take a very long time).
+    ⚠️ Use with caution — this option significantly increases runtime.
+    
+-OutFile "<FilePath>"
+    Writes the search results to the specified output file
+    (example: -OutFile "C:\results.txt").
+	
 ## Example Commands
 
 ```
-# This command searches for all Files include hidden on the partion C in All File Types for the Flag "RASTA"
+# This command searches all files, including hidden ones, on the C: partition for the flag "RASTA", regardless of file type.
 powershell -ep Bypass -File "C:\Users\Administrator\Documents\FlagFinder.ps1"  -Path "C:\"  -IncludeHidden  -FlagFormat "RASTA" -AllFiles
 ```
 
 ```PowerShell
-# This command disables PowerShell logging and searches partition E, including hidden files such as Appdata or Recycle Bin, for the flag DEFAULT-Pattern
+# This command disables PowerShell logging and searches the E: partition — including hidden directories such as AppData and the Recycle Bin
 powershell -ep Bypass -File "C:\Users\Administrator\Documents\FlagFinder.ps1" ` -Path "E:\"  -IncludeHidden 
 ```
 
