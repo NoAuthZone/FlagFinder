@@ -1,7 +1,4 @@
-                                                  
 
-                                                   
-                                                  
 ```
    ____ __             ____ _          __         
   / __// /___ _ ___ _ / __/(_)___  ___/ /___  ____
@@ -65,9 +62,14 @@ By default, the following file types are searched (if **-AllFiles** is not set):
 
 ## Example Commands
 
+```
+# This command searches for all Files include hidden on the partion C in All File Types for the Flag "RASTA"
+powershell -ep Bypass -File "C:\Users\Administrator\Documents\FlagFinder.ps1"  -Path "C:\"  -IncludeHidden  -FlagFormat "RASTA" -AllFiles
+```
 
 ```PowerShell
-# This command disables PowerShell logging and searches partition E, including hidden files such as Appdata or Recycle Bin, for the flag
-powershell -ep Bypass -File "C:\Users\Administrator\Documents\FlagFinderv2.ps1" ` -Path "E:\"  -IncludeHidden 
+# This command disables PowerShell logging and searches partition E, including hidden files such as Appdata or Recycle Bin, for the flag DEFAULT-Pattern
+powershell -ep Bypass -File "C:\Users\Administrator\Documents\FlagFinder.ps1" ` -Path "E:\"  -IncludeHidden 
 ```
+
 
