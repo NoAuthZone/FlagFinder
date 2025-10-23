@@ -60,8 +60,8 @@ Overrides the default pattern. Matching is case-insensitive.
 Searches all registry paths (may take a very long time).
 ⚠️ Use with caution — this option significantly increases runtime.
     
--OutFile "<FilePath>"
-Writes the search results to the specified output file (example: -OutFile "C:\results.txt").
+-OutFile "flag.csv"
+Writes the search results to the specified output .csv file (example: -OutFile "C:\results.csv").
 
 ```
 	
