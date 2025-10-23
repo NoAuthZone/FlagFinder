@@ -42,7 +42,8 @@ By default, the following file types are searched (if **-AllFiles** is not set):
 
 ## Options / Parameters
 
-`-Path "Path"`
+```
+-Path "Path"
 Search path ( example: `-Path "C:\Users"` ). The command searches recursively under the specified path.
     
 `-IncludeHidden`
@@ -61,6 +62,8 @@ Searches all registry paths (may take a very long time).
     
 `-OutFile "<FilePath>"`
 Writes the search results to the specified output file (example: -OutFile "C:\results.txt").
+
+```
 	
 ## Example Commands
 
