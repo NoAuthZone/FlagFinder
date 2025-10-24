@@ -1,7 +1,7 @@
-﻿# "----------------------------------------- FLAGFINDER -------------------------------------------------" #
+# "----------------------------------------- CTF-FlagFinder ---------------------------------------------" #
 # " Version:  1.0                                                                                        " # 
 # " Made by   NoAuthZone                                                                                 " # 
-# " Source:   https://github.com/NoAuthZone/FlagFinder                                                   " # 
+# " Source:   https://github.com/NoAuthZone/CTF-FlagFinder                                               " # 
 # "------------------------------------------------------------------------------------------------------" #
 
 param(
@@ -19,10 +19,10 @@ param(
 ######################################## HELP INFOS
 
 Write-Host "" -ForegroundColor DarkCyan
-Write-Host "----------------------------------------- FLAGFINDER -------------------------------------------------------" -ForegroundColor White -BackgroundColor Black
+Write-Host "--------------------------------------- CTF-FlagFinder -----------------------------------------------------" -ForegroundColor White -BackgroundColor Black
 Write-Host " Version:  1.0                                                                                              " -ForegroundColor White -BackgroundColor Black
 Write-Host " Made by   NoAuthZone                                                                                       " -ForegroundColor White -BackgroundColor Black
-Write-Host " Source:   https://github.com/NoAuthZone/FlagFinder                                                         " -ForegroundColor White -BackgroundColor Black
+Write-Host " Source:   https://github.com/NoAuthZone/CTF-FlagFinder                                                     " -ForegroundColor White -BackgroundColor Black
 Write-Host "                                                                                                            " -ForegroundColor White -BackgroundColor Black
 Write-Host "                                                                                                            " -ForegroundColor White -BackgroundColor Black
 Write-Host " -Path 'C:\Users'        - Search path ( example: `-Path 'C:\Users'` ).                                     " -ForegroundColor White -BackgroundColor Black
