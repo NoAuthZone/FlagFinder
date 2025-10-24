@@ -1,10 +1,10 @@
-
+  
 ```
-   ____ __             ____ _          __         
-  / __// /___ _ ___ _ / __/(_)___  ___/ /___  ____
- / _/ / // _ `// _ `// _/ / // _ \/ _  // -_)/ __/
-/_/  /_/ \_,_/ \_, //_/  /_//_//_/\_,_/ \__//_/   
-              /___/                                                         
+  _____ ______ ____      ____ __             ____ _          __         
+ / ___//_  __// __/____ / __// /___ _ ___ _ / __/(_)___  ___/ /___  ____
+/ /__   / /  / _/ /___// _/ / // _ `// _ `// _/ / // _ \/ _  // -_)/ __/
+\___/  /_/  /_/       /_/  /_/ \_,_/ \_, //_/  /_//_//_/\_,_/ \__//_/   
+                                    /___/                                                                   
 ```
 
 Version: **1.0**  
@@ -15,7 +15,7 @@ Author: **NoAuthZone**
 
 ## Short description
 
-**FlagFinder** is a PowerShell-based search tool for finding CTF/flag strings and similar secrets on Windows systems. It searches files (content & names), the registry, DNS cache, recycle bin, log files, ZIP and OOXML archives, and much more—including hidden areas, if desired.
+**CTF-FlagFinder** is a PowerShell-based search tool for finding CTF/flag strings and similar secrets on Windows systems. It searches files (content & names), the registry, DNS cache, recycle bin, log files, ZIP and OOXML archives, and much more—including hidden areas, if desired.
 
 ---
 
@@ -67,14 +67,12 @@ Writes the search results to the specified output .csv file (example: -OutFile "
 	
 ## Example Commands
 
-```
+```PowerShell
 # This command searches all files, including hidden ones, on the C: partition for the flag "RASTA", regardless of file type.
-powershell -ep Bypass -File "C:\Users\Administrator\Documents\FlagFinder.ps1"  -Path "C:\"  -IncludeHidden  -FlagFormat "RASTA" -AllFiles
+powershell -ep Bypass -File "C:\Users\Administrator\Documents\CTF-FlagFinder.ps1"  -Path "C:\"  -IncludeHidden  -FlagFormat "RASTA" -AllFiles
 ```
 
 ```PowerShell
 # This command disables PowerShell logging and searches the E: partition — including hidden directories such as AppData and the Recycle Bin
-powershell -ep Bypass -File "C:\Users\Administrator\Documents\FlagFinder.ps1" ` -Path "E:\"  -IncludeHidden 
+powershell -ep Bypass -File "C:\Users\Administrator\Documents\CTF-FlagFinder.ps1" ` -Path "E:\"  -IncludeHidden 
 ```
-
-
